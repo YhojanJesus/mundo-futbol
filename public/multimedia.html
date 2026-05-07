@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia | Momentos de Fútbol</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header class="header-principal">
+        <h1>MUNDO FÚTBOL</h1>
+        <nav class="navegacion-principal">
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="tabla.html">TABLA</a></li>
+                <li><a href="formulario.html">FORMULARIO</a></li>
+                <li><a href="multimedia.html" class="activo">MULTIMEDIA</a></li>
+                <li><a href="crud-completo.html">CRUD</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="contenedor-principal">
+        <main class="seccion-principal">
+            <h2 style="color: white; text-align: center;">Galería Multimedia</h2>
+            
+            <div class="contenedor-multimedia">
+                <section class="item-multimedia">
+                    <h3>Audio de las mejores porras del fútbol</h3>
+                    <audio controls>
+                        <source src="images/audio_futbol.mp3" type="audio/mpeg">
+                        Tu navegador no soporta el audio.
+                    </audio>
+                </section>
+
+                <section class="item-multimedia">
+                    <h3>Mejores Jugadas</h3>
+                    <video controls poster="images/imagen2.jpg">
+                        <source src="images/video_futbol.mp4" type="video/mp4">
+                        Tu navegador no soporta el video.
+                    </video>
+                </section>
+            </div>
+
+            <section class="galeria-interactiva">
+                <h3>🖼️ Galería interactiva (haz clic en las miniaturas)</h3>
+                <img id="imagenPrincipal" class="imagen-principal" src="images/messi.jpg" alt="Imagen principal">
+                <div class="miniaturas">
+                    <img src="images/messi.jpg" class="miniatura" alt="Messi">
+                    <img src="images/maradona.jpg" class="miniatura" alt="Maradona">
+                    <img src="images/cristiano.jpg" class="miniatura" alt="Cristiano">
+                    <img src="images/imagen1.jpg" class="miniatura" alt="Fútbol">
+                    <img src="images/imagen2.jpg" class="miniatura" alt="Reglas">
+                </div>
+            </section>
+
+            <section class="carrusel">
+                <h3>🎞️ Carrusel de imágenes (automático + controles)</h3>
+                <img id="imgCarrusel" class="carrusel-imagen" src="images/messi.jpg" alt="Carrusel">
+                <div>
+                    <button id="btnAnterior">◀ Anterior</button>
+                    <button id="btnSiguiente">Siguiente ▶</button>
+                </div>
+                <p id="indicadorCarrusel"></p>
+            </section>
+
+            <div style="margin-top: 30px; text-align: center;">
+                <a href="#" class="boton" onclick="return false;">Ver más videos</a>
+            </div>
+        </main>
+    </div>
+
+    <footer class="pie-pagina">
+        <p>&copy; 2026 Portal de Fútbol - Contenido Multimedia</p>
+    </footer>
+
+    <button id="btnModoOscuro" class="boton-modo">🌙</button>
+    <button id="btnVolverArriba">⬆️</button>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

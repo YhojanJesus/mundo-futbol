@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasión Futbolística | Inicio y Estrellas</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header class="header-principal">
+        <h1>MUNDO FÚTBOL</h1>
+        <nav class="navegacion-principal">
+            <ul>
+                <li><a href="index.html" class="activo">INICIO</a></li>
+                <li><a href="tabla.html">TABLA</a></li>
+                <li><a href="formulario.html">FORMULARIO</a></li>
+                <li><a href="multimedia.html">MULTIMEDIA</a></li>
+                <li><a href="crud-completo.html">CRUD</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="contenedor-principal">
+        <div class="grid-contenedor">
+            <main class="seccion-principal">
+                <section id="inicio">
+                    <h2>Bienvenidos al Portal del Fútbol</h2>
+                    <div class="imagen-destacada">
+                        <img src="images/imagen1.jpg" alt="Imagen representativa de fútbol">
+                    </div>
+                    
+                    <nav class="indice-interno">
+                        <h3>Índice de Navegación Interna</h3>
+                        <ul>
+                            <li><a href="#reglamento">Reglas de Juego Oficiales</a></li>
+                            <li><a href="#leyendas">Las Leyendas de la Historia</a></li>
+                            <li><a href="#glosario">Glosario de Términos</a></li>
+                        </ul>
+                    </nav>
+                    <p>El fútbol es un deporte que une continentes. Como bien se dice: <q>El fútbol es el ballet de las masas</q>.</p>
+                </section>
+
+                <section id="leyendas">
+                    <h2>Gigantes de la Historia</h2>
+                    
+                    <article class="tarjeta-jugador">
+                        <div class="contenido-jugador">
+                            <h3>Lionel Messi</h3>
+                            <p><strong>El máximo ganador de Balones de Oro (8).</strong> Su carrera alcanzó la perfección al ganar el Mundial de Qatar 2022. Su control de balón y visión son de otro planeta.</p>
+                        </div>
+                        <img src="images/messi.jpg" alt="Lionel Messi">
+                    </article>
+
+                    <article class="tarjeta-jugador">
+                        <img src="images/maradona.jpg" alt="Diego Maradona">
+                        <div class="contenido-jugador">
+                            <h3>Diego Armando Maradona</h3>
+                            <p>El "Pie de Oro". Su actuación en México 86 es considerada la mejor de la historia. Un ícono que demostró que el fútbol es pasión pura.</p>
+                        </div>
+                    </article>
+
+                    <article class="tarjeta-jugador">
+                        <div class="contenido-jugador">
+                            <h3>Cristiano Ronaldo</h3>
+                            <p>El máximo goleador histórico del fútbol profesional. Ejemplo de disciplina y potencia física, ganador de 5 Champions League.</p>
+                        </div>
+                        <img src="images/cristiano.jpg" alt="Cristiano Ronaldo">
+                    </article>
+
+                    <div class="cita-destacada">
+                        <blockquote cite="https://www.fifa.com">
+                            "No puedes ganar nada solo. El fútbol se trata de equipo, de esfuerzo conjunto y de respeto por el rival."
+                            <br><cite>— Alfredo Di Stéfano</cite>
+                        </blockquote>
+                    </div>
+                </section>
+
+                <section id="reglamento">
+                    <h2>Reglamento Oficial IFAB</h2>
+                    <div class="reglamento-contenido">
+                        <img src="images/imagen2.jpg" alt="Reglas de juego">
+                        <div>
+                            <p>El reglamento es la base de la justicia en el campo. Descarga aquí el manual 22/23:</p>
+                            <a href="Reglas_de_juego.pdf" download="Reglas_de_juego_Oficiales" class="boton">
+                                📥 Descargar Reglas_de_juego.pdf
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="glosario">
+                    <h3>Diccionario para Aficionados</h3>
+                    <dl>
+                        <dt>Penalti:</dt>
+                        <dd>Un tiro libre directo desde el punto penal, a 11 metros de la portería.</dd>
+                        <dt>Fuera de juego:</dt>
+                        <dd>Cuando un atacante está más cerca de la línea de meta que el balón y el penúltimo adversario.</dd>
+                    </dl>
+                </section>
+
+                <section class="lista-dinamica-container">
+                    <h3>📝 Lista de momentos favoritos del fútbol</h3>
+                    <input type="text" id="nuevoItem" placeholder="Escribe un momento épico...">
+                    <button id="agregarItem" class="boton">➕ Agregar</button>
+                    <ul id="listaDinamica"></ul>
+                </section>
+
+                <section class="likes-container">
+                    <button id="btnMeGusta" class="boton-like">❤️ Me gusta</button>
+                    <p>Total de likes: <span id="contadorLike">0</span></p>
+                </section>
+
+                <p class="noticias-link">Más noticias: <a href="https://www.marca.com/futbol.html" target="_blank" rel="noopener noreferrer">Diario Marca Fútbol</a></p>
+            </main>
+
+            <aside class="barra-lateral">
+                <h3>¿Sabías que...? 💡</h3>
+                <p>El Sheffield FC de Inglaterra es el club más antiguo del mundo (1857).</p>
+                <p>El partido de fútbol más largo duró 36 horas seguidas.</p>
+                <p>La pelota más rápida registrada fue de 210 km/h.</p>
+            </aside>
+        </div>
+    </div>
+
+    <footer id="contacto" class="pie-pagina">
+        <p>¿Dudas? Contáctanos:</p>
+        <p>
+            📧 <a href="mailto:federacion@ejemplo.com">federacion@ejemplo.com</a> | 
+            📞 <a href="tel:+34900123456">+34 900 123 456</a>
+        </p>
+        <p>&copy; 2026 Portal de Fútbol Semántico. Creado por Yhojan Lozano para clase de HTML.</p>
+    </footer>
+
+    <button id="btnModoOscuro" class="boton-modo">🌙</button>
+    <button id="btnVolverArriba">⬆️</button>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

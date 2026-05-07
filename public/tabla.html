@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estadísticas | Ganadores Balón de Oro</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header class="header-principal">
+        <h1>MUNDO FÚTBOL</h1>
+        <nav class="navegacion-principal">
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="tabla.html" class="activo">TABLA</a></li>
+                <li><a href="formulario.html">FORMULARIO</a></li>
+                <li><a href="multimedia.html">MULTIMEDIA</a></li>
+                <li><a href="crud-completo.html">CRUD</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="contenedor-principal">
+        <main class="seccion-principal">
+            <h2>Histórico: Ganadores del Balón de Oro</h2>
+            <p class="subtitulo-tabla">A continuación se muestran algunos de los ganadores más recientes y destacados, agrupados por su club en ese momento.</p>
+
+            <table class="tabla-estadisticas">
+                <thead>
+                    <tr>
+                        <th>Equipo (Club)</th>
+                        <th>Año</th>
+                        <th>Jugador</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="4" class="club-nombre">FC Barcelona</td>
+                        <td>2009</td>
+                        <td>Lionel Messi</td>
+                    </tr>
+                    <tr>
+                        <td>2010</td>
+                        <td>Lionel Messi</td>
+                    </tr>
+                    <tr>
+                        <td>2011</td>
+                        <td>Lionel Messi</td>
+                    </tr>
+                    <tr>
+                        <td>2015</td>
+                        <td>Lionel Messi</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3" class="club-nombre">Real Madrid CF</td>
+                        <td>2017</td>
+                        <td>Cristiano Ronaldo</td>
+                    </tr>
+                    <tr>
+                        <td>2018</td>
+                        <td>Luka Modrić</td>
+                    </tr>
+                    <tr>
+                        <td>2022</td>
+                        <td>Karim Benzema</td>
+                    </tr>
+                    <tr>
+                        <td class="club-nombre">Inter de Milán</td>
+                        <td>1997</td>
+                        <td>Ronaldo Nazário</td>
+                    </tr>
+                    <tr>
+                        <td class="club-nombre">AC Milan</td>
+                        <td>2007</td>
+                        <td>Kaká</td>
+                    </tr>
+                    <tr>
+                        <td class="club-nombre">Manchester United</td>
+                        <td>2008</td>
+                        <td>Cristiano Ronaldo</td>
+                    </tr>
+                    <tr>
+                        <td class="club-nombre">Juventus</td>
+                        <td>1993</td>
+                        <td>Roberto Baggio</td>
+                    </tr>
+                    <tr>
+                        <td class="club-nombre">Bayern Múnich</td>
+                        <td>2020</td>
+                        <td>Robert Lewandowski</td>
+                    </tr>
+                    <tr>
+                        <td class="club-nombre">Paris Saint-Germain</td>
+                        <td>2021</td>
+                        <td>Lionel Messi</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <section class="quiz-container">
+                <h3>⚽ Quiz: ¿Qué tanto sabes de fútbol?</h3>
+                <p>Respuestas seleccionadas: <strong id="contadorRespuestas">0 / 3</strong></p>
+                
+                <div class="pregunta-quiz">
+                    <p>1. ¿Quién ganó el Mundial 2018?</p>
+                    <label><input type="radio" name="p1" value="bra"> Brasil</label>
+                    <label><input type="radio" name="p1" value="fra"> Francia</label>
+                    <label><input type="radio" name="p1" value="arg"> Argentina</label>
+                </div>
+                
+                <div class="pregunta-quiz">
+                    <p>2. ¿Cuál es el club con más Champions League?</p>
+                    <label><input type="radio" name="p2" value="rm"> Real Madrid</label>
+                    <label><input type="radio" name="p2" value="milan"> AC Milan</label>
+                    <label><input type="radio" name="p2" value="liv"> Liverpool</label>
+                </div>
+                
+                <div class="pregunta-quiz">
+                    <p>3. ¿Qué jugador tiene 8 Balones de Oro?</p>
+                    <label><input type="radio" name="p3" value="cr7"> Cristiano Ronaldo</label>
+                    <label><input type="radio" name="p3" value="messi"> Lionel Messi</label>
+                    <label><input type="radio" name="p3" value="neymar"> Neymar</label>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer class="pie-pagina">
+        <p>&copy; 2026 Portal de Fútbol - Datos Históricos</p>
+        <p>⚽ Los mejores jugadores de la historia ⚽</p>
+    </footer>
+
+    <button id="btnModoOscuro" class="boton-modo">🌙</button>
+    <button id="btnVolverArriba">⬆️</button>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
